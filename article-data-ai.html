@@ -3,53 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ניתוח נתונים ו־AI – טרנדים לשנה הנוכחית | BrainAI</title>
+  <title>ניתוח נתונים ו־AI – טרנדים לשנה הנוכחית | אתר ללימוד בינה מלאכותית AI</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root { --brand-primary: #4f46e5; --brand-secondary: #06b6d4; --bg: #0f0f1a; --surface: #18182a; --text: #e8eaf0; --text-muted: #8892a8; --border: #2d2d44; }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Heebo', sans-serif; background: var(--bg); color: var(--text); line-height: 1.75; min-height: 100vh; }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
-    header { padding: 20px 0; border-bottom: 1px solid var(--border); }
-    .logo { font-size: 1.5rem; font-weight: 700; background: linear-gradient(90deg, var(--brand-primary), var(--brand-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
-    .article-header { padding: 40px 0 24px; }
-    .article-date { font-size: 0.9rem; color: var(--brand-secondary); margin-bottom: 8px; }
-    .article-header h1 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; line-height: 1.3; }
-    .prose { padding: 24px 0 48px; }
-    .prose p { margin-bottom: 1.25em; color: var(--text); }
-    .prose h2 { font-size: 1.25rem; margin: 2em 0 0.75em; color: var(--text); }
-    .back { display: inline-block; color: var(--brand-secondary); text-decoration: none; margin-bottom: 24px; font-size: 0.95rem; }
-    footer { padding: 32px 0; border-top: 1px solid var(--border); text-align: center; color: var(--text-muted); font-size: 0.9rem; }
-  </style>
 </head>
 <body>
-  <header>
-    <div class="wrap" style="display: flex; justify-content: space-between; align-items: center;">
-      <a href="index.html" class="logo">BrainAI</a>
-      <a href="index.html" style="color: var(--text-muted); text-decoration: none;">כתבות</a>
-    </div>
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="לוגו" class="logo-icon">
+          <span class="logo-text">לימוד בינה מלאכותית AI</span>
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#home">בית</a></li>
+        <li><a href="index.html#articles">כתבות</a></li>
+        <li><a href="index.html#tools">כלים</a></li>
+        <li><a href="index.html#about">אודות</a></li>
+      </ul>
+      <button type="button" class="mobile-menu-btn" aria-label="תפריט"><span></span><span></span><span></span></button>
+    </nav>
   </header>
-  <main class="wrap">
-    <a href="index.html" class="back">← חזרה לכתבות</a>
+  <main class="article-page">
+    <div class="container">
+    <a href="index.html#articles" class="back-link">← חזרה לכתבות</a>
     <article>
       <header class="article-header">
         <div class="article-date">20 בפברואר 2026</div>
         <h1>ניתוח נתונים ו־AI – טרנדים לשנה הנוכחית</h1>
       </header>
       <div class="prose">
-        <p>שילוב של כלי BI וניתוח נתונים עם מודלים גנרטיביים הופך נפוץ יותר ב־2026. במאמר זה נסקור טרנדים מרכזיים וכלים שעוזרים להפוך טבלאות וגרפים לתובנות בטקסט פשוט.</p>
+        <p>שילוב של כלי BI וניתוח נתונים עם מודלים גנרטיביים הופך נפוץ יותר ב־2026. במאמר זה נסקור טרנדים מרכזיים וכלים שעוזרים להפוך טבלאות וגרפים לתובנות בטקסט פשוט, עם קישורים לכלים המובילים.</p>
         <h2>שאילתות בטקסט חופשי</h2>
         <p>כלים רבים מאפשרים לשאול שאלות על מסד הנתונים או על קובץ אקסל בעברית או באנגלית, והמערכת מתרגמת לשאילתה ומציגה תוצאות. זה מתאים למנהלים שלא מכירים SQL או למי שרוצה לבדוק השערות במהירות. חשוב לוודא שהנתונים לא רגישים ושהחיבור מאובטח.</p>
-        <p>השאלות יכולות להיות פשוטות כמו "מה היו המכירות בחודש האחרון לפי אזור?" או מורכבות יותר עם סינונים והשוואות. חלק מהכלים מציעים גם הצעות לשאלות בהתאם למבנה הנתונים. ככל שמאגר הנתונים גדול ומסודר יותר, כך התוצאות יהיו אמינות – ולכן כדאי להשקיע בארגון העמודות, בשמות ברורים ובמטא־דאטה לפני שמחברים כלי AI.</p>
+        <p>השאלות יכולות להיות פשוטות כמו "מה היו המכירות בחודש האחרון לפי אזור?" או מורכבות יותר עם סינונים והשוואות. כלים כמו <a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a>, <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> ו־<a href="https://www.perplexity.ai" target="_blank" rel="noopener">Perplexity</a> יכולים לנתח טבלאות שהועלו או לסכם מסמכים. חלק מהכלים מציעים גם הצעות לשאלות בהתאם למבנה הנתונים. ככל שמאגר הנתונים גדול ומסודר יותר, כך התוצאות יהיו אמינות – ולכן כדאי להשקיע בארגון העמודות, בשמות ברורים ובמטא־דאטה לפני שמחברים כלי AI.</p>
         <h2>סיכומים ודוחות אוטומטיים</h2>
-        <p>מודלים יכולים לסכם טבלאות, להסביר שינויים בין תקופות ולהציע המלצות בטקסט. השילוב עם גרפים קיימים (למשל ב־Power BI, Tableau או כלי ענן) הופך את הדוחות לקריאים יותר ולמותאמים לקהל שאינו טכני.</p>
-        <p>דוגמה: העלאה של קובץ אקסל עם מכירות רבעוניות ואפשר לבקש "סכם את המגמות העיקריות והמלץ על שלושה צעדים לשיפור". המודל יזהה עליות וירידות, יציין תקופות חריגות ויציע כיווני פעולה. אפשר להשתמש בכך כטיוטה לפגישות או לדוחות ניהוליים, עם עריכה אנושית לפני הצגה.</p>
+        <p>מודלים יכולים לסכם טבלאות, להסביר שינויים בין תקופות ולהציע המלצות בטקסט. השילוב עם גרפים קיימים (למשל ב־<a href="https://powerbi.microsoft.com" target="_blank" rel="noopener">Power BI</a>, <a href="https://www.tableau.com" target="_blank" rel="noopener">Tableau</a> או כלי ענן) הופך את הדוחות לקריאים יותר ולמותאמים לקהל שאינו טכני.</p>
+        <p>דוגמה: העלאה של קובץ אקסל עם מכירות רבעוניות לאחד מכלי הצ'אט (למשל <a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a> או <a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a>) ואפשר לבקש "סכם את המגמות העיקריות והמלץ על שלושה צעדים לשיפור". המודל יזהה עליות וירידות, יציין תקופות חריגות ויציע כיווני פעולה. אפשר להשתמש בכך כטיוטה לפגישות או לדוחות ניהוליים, עם עריכה אנושית לפני הצגה. לרשימת כלים מלאה עיינו בסעיף <a href="index.html#tools">כלי AI פופולריים</a> בעמוד הראשי.</p>
         <h2>מה לבדוק לפני שמתחילים</h2>
-        <p>בחרו כלי שתומך בעברית ובמבנה הנתונים שלכם. בדקו איפה הנתונים מעובדים (ענן מקומי או חיצוני) והתאימו למדיניות האבטחה בארגון. בקהילת Brainers יש סדנאות על ניתוח נתונים עם AI – מוזמנים לעיין בלוח הסדנאות הקרובות.</p>
-        <p>בנוסף, ודאו שהתוצאות נכונות: מודלים גנרטיביים עלולים לפעמים להסיק מסקנות לא מדויקות או "להמציא" מספרים. השוו לדוחות ידניים או לשאילתות שאתם מכירים, והשתמשו ב־AI כעזר ולא כהחלפה מלאה לאימות נתונים קריטיים.</p>
+        <p>בחרו כלי שתומך בעברית ובמבנה הנתונים שלכם. בדקו איפה הנתונים מעובדים (ענן מקומי או חיצוני) והתאימו למדיניות האבטחה בארגון. בסדנאות ובקורסים ללימוד AI יש לא פעם יחידות על ניתוח נתונים – מומלץ לעיין בלוח הסדנאות והקורסים הקרובים.</p>
+        <p>בנוסף, ודאו שהתוצאות נכונות: מודלים גנרטיביים עלולים לפעמים להסיק מסקנות לא מדויקות או "להמציא" מספרים. השוו לדוחות ידניים או לשאילתות שאתם מכירים, והשתמשו ב־AI כעזר ולא כהחלפה מלאה לאימות נתונים קריטיים. <a href="https://notebooklm.google.com" target="_blank" rel="noopener">Notebook LM</a> מתאים לעבודה עם מקורות ומסמכים שלכם בלי להעלות נתונים רגישים לשרתים ציבוריים – אפשר לשלב אותו בתהליך הניתוח כשהדאטה רגישה.</p>
+        <p>לסיכום: שילוב כלי BI עם מודלים גנרטיביים חוסך זמן ומנגיש תובנות לקהל רחב. השתמשו בקישורים שסופקו – ל־Power BI, Tableau, ChatGPT, Claude, Gemini, Perplexity ו־Notebook LM – ובסעיף <a href="index.html#tools">כלי AI פופולריים</a> בעמוד הראשי. קראו גם את הכתבה על <a href="article-security-ai.html">אבטחה ופרטיות</a> כשעובדים עם נתונים רגישים.</p>
       </div>
     </article>
+    </div>
   </main>
-  <footer><div class="wrap">© 2026 BrainAI · חדשות וחידושים</div></footer>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 אתר ללימוד בינה מלאכותית AI - כל הזכויות שמורות לשמוליק שחר יועץ לימודי המנגיש לימודי בינה מלאכותית לכל אדם</p>
+      <p class="footer-contact">טלפון: <a href="tel:+972522603831">+972522603831</a> | אימייל: <a href="mailto:shaharprod@gmail.com">shaharprod@gmail.com</a></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

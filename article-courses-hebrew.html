@@ -3,54 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>קורסים ומשאבים ללימוד AI בעברית | BrainAI</title>
+  <title>קורסים ומשאבים ללימוד AI בעברית | אתר ללימוד בינה מלאכותית AI</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root { --brand-primary: #4f46e5; --brand-secondary: #06b6d4; --bg: #0f0f1a; --surface: #18182a; --text: #e8eaf0; --text-muted: #8892a8; --border: #2d2d44; }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Heebo', sans-serif; background: var(--bg); color: var(--text); line-height: 1.75; min-height: 100vh; }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
-    header { padding: 20px 0; border-bottom: 1px solid var(--border); }
-    .logo { font-size: 1.5rem; font-weight: 700; background: linear-gradient(90deg, var(--brand-primary), var(--brand-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
-    .article-header { padding: 40px 0 24px; }
-    .article-date { font-size: 0.9rem; color: var(--brand-secondary); margin-bottom: 8px; }
-    .article-header h1 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; line-height: 1.3; }
-    .prose { padding: 24px 0 48px; }
-    .prose p { margin-bottom: 1.25em; color: var(--text); }
-    .prose h2 { font-size: 1.25rem; margin: 2em 0 0.75em; color: var(--text); }
-    .prose ul { margin: 1em 0 1.5em 1.5em; }
-    .back { display: inline-block; color: var(--brand-secondary); text-decoration: none; margin-bottom: 24px; font-size: 0.95rem; }
-    footer { padding: 32px 0; border-top: 1px solid var(--border); text-align: center; color: var(--text-muted); font-size: 0.9rem; }
-  </style>
 </head>
 <body>
-  <header>
-    <div class="wrap" style="display: flex; justify-content: space-between; align-items: center;">
-      <a href="index.html" class="logo">BrainAI</a>
-      <a href="index.html" style="color: var(--text-muted); text-decoration: none;">כתבות</a>
-    </div>
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="לוגו" class="logo-icon">
+          <span class="logo-text">לימוד בינה מלאכותית AI</span>
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#home">בית</a></li>
+        <li><a href="index.html#articles">כתבות</a></li>
+        <li><a href="index.html#tools">כלים</a></li>
+        <li><a href="index.html#about">אודות</a></li>
+      </ul>
+      <button type="button" class="mobile-menu-btn" aria-label="תפריט"><span></span><span></span><span></span></button>
+    </nav>
   </header>
-  <main class="wrap">
-    <a href="index.html" class="back">← חזרה לכתבות</a>
+  <main class="article-page">
+    <div class="container">
+    <a href="index.html#articles" class="back-link">← חזרה לכתבות</a>
     <article>
       <header class="article-header">
         <div class="article-date">5 בינואר 2026</div>
         <h1>קורסים ומשאבים ללימוד AI בעברית</h1>
       </header>
       <div class="prose">
-        <p>רוצים להתחיל עם בינה מלאכותית או להעמיק? ריכזנו מקורות מומלצים בעברית – מהתחלה בסיסית ועד התמחות – כולל קהילת Brainers והסדנאות השבועיות שלנו.</p>
+        <p>רוצים להתחיל עם בינה מלאכותית או להעמיק? ריכזנו מקורות מומלצים בעברית – מהתחלה בסיסית ועד התמחות – קורסים, סדנאות ומשאבים באינטרנט, עם קישורים ישירים לכלים שימושיים.</p>
         <h2>למתחילים</h2>
-        <p>אם אתם חדשים בתחום, מומלץ להתחיל בהבנה מהי בינה מלאכותית גנרטיבית, איך עובדים עם צ'אט (כמו ChatGPT או כלים מקבילים) ואיך לכתוב הנחיות (prompts) ברורות. יש קורסים מקוונים בעברית שמכסים את הבסיס ב־4–6 שעות. אחרי שמבינים את העקרונות, קל יותר להתקדם לכלים מתקדמים.</p>
-        <p>השלב הראשון הוא התנסות hands-on: פתחו חשבון באחד מהכלים הפופולריים, נסו משימות פשוטות כמו סיכום מאמר או כתיבת מייל, והתאמנו על ניסוח הנחיות – ככל שההנחיה מפורטת וממוקדת יותר, התוצאה טובה יותר. אל תחששו מטעויות; למידה מתבססת על ניסוי ותיקון.</p>
+        <p>אם אתם חדשים בתחום, מומלץ להתחיל בהבנה מהי בינה מלאכותית גנרטיבית, איך עובדים עם צ'אט ואיך לכתוב הנחיות (prompts) ברורות. שלושת הכלים המומלצים להתחלה: <a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a>, <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> ו־<a href="https://gemini.google.com" target="_blank" rel="noopener">Google Gemini</a> – כולם זמינים בדפדפן וחלקם בחינם. יש קורסים מקוונים בעברית שמכסים את הבסיס ב־4–6 שעות. אחרי שמבינים את העקרונות, קל יותר להתקדם לכלים מתקדמים.</p>
+        <p>השלב הראשון הוא התנסות hands-on: פתחו חשבון באחד מהכלים, נסו משימות פשוטות כמו סיכום מאמר או כתיבת מייל, והתאמנו על ניסוח הנחיות – ככל שההנחיה מפורטת וממוקדת יותר, התוצאה טובה יותר. אל תחששו מטעויות; למידה מתבססת על ניסוי ותיקון. למי שרוצה לעבוד עם המסמכים והמקורות שלו – <a href="https://notebooklm.google.com" target="_blank" rel="noopener">Notebook LM</a> מאפשר לבנות עוזר אישי על בסיס קבצים שהעלית; מצוין למחקר וללימוד. רשימת כלים מלאה עם לינקים נמצאת בסעיף <a href="index.html#tools">כלי AI פופולריים</a> בעמוד הראשי.</p>
         <h2>התמחות ואינטגרציה</h2>
-        <p>למי שמעוניין לחבר AI לאתר, לאפליקציה או למערכת פנימית – יש קורסים ומדריכים על API, אוטומציה ופיתוח. מומלץ לבחור טכנולוגיה אחת (למשל Python או Node) ולהתמקד בה. משאבים באנגלית רבים; בעברית קהילת Brainers מספקת תמיכה ומפגשי שאלות ותשובות.</p>
-        <p>נושאים שכדאי ללמוד: קריאה ויצירה של API calls, טיפול ב־tokens ובמגבלות אורך, שימוש ב־SDK של ספקים מובילים, ואופציונלי – פריסה של מודלים מקומיים. קורס אחד מסודר ייתן לכם בסיס טוב; אחריו אפשר להעמיק לפי הצורך בפרויקטים אמיתיים.</p>
-        <h2>קהילת Brainers וסדנאות</h2>
-        <p>במועדון Brainers של BrainAI מתקיימות סדנאות שבועיות עם מומחים, תרגולים מעשיים וגישה למשאבים בלעדיים. החברות בתשלום חודשי סמלי ומתאימה למי שרוצה לימוד מונחה ועדכונים שוטפים. לפרטים והרשמה היכנסו לדף Brainers באתר BrainAI.</p>
-        <p>הסדנאות מכסות נושאים כמו כתיבת פרומפטים מתקדמים, אוטומציה עם Zapier ו־n8n, ניתוח נתונים עם AI, ואבטחת מידע. יש גם מפגשי Q&A שבהם אפשר להעלות שאלות מפרויקטים אישיים ולקבל המלצות מהקהילה ומהמנחים.</p>
+        <p>למי שמעוניין לחבר AI לאתר, לאפליקציה או למערכת פנימית – יש קורסים ומדריכים על API, אוטומציה ופיתוח. מומלץ לבחור טכנולוגיה אחת (למשל Python או Node) ולהתמקד בה. משאבים באנגלית רבים; בעברית יש קהילות לימוד ופורומים שמספקים תמיכה ומפגשי שאלות ותשובות.</p>
+        <p>נושאים שכדאי ללמוד: קריאה ויצירה של API calls, טיפול ב־tokens ובמגבלות אורך, שימוש ב־SDK של ספקים מובילים (OpenAI, Anthropic, Google), ואופציונלי – פריסה של מודלים מקומיים. לאוטומציה בין שירותים ללא קוד כדאי להכיר <a href="https://zapier.com" target="_blank" rel="noopener">Zapier</a> ו־<a href="https://n8n.io" target="_blank" rel="noopener">n8n</a> – שניהם מחברים אפליקציות ואירועים ומתאימים גם למי שאין רקע בתכנות. קורס אחד מסודר ייתן לכם בסיס טוב; אחריו אפשר להעמיק לפי הצורך בפרויקטים אמיתיים.</p>
+        <h2>סדנאות ומפגשי לימוד</h2>
+        <p>במסגרות שונות מתקיימות סדנאות שבועיות או חודשיות עם מומחים, תרגולים מעשיים ומשאבים. מומלץ לחפש סדנאות ללימוד AI בעברית – באונליין או באזור המגורים – ולהצטרף לפי הצורך והתקציב.</p>
+        <p>נושאים שכדאי לחפש: כתיבת פרומפטים מתקדמים, אוטומציה עם <a href="https://zapier.com" target="_blank" rel="noopener">Zapier</a> ו־<a href="https://n8n.io" target="_blank" rel="noopener">n8n</a>, ניתוח נתונים עם AI, ואבטחת מידע. במפגשי Q&A אפשר להעלות שאלות מפרויקטים אישיים ולקבל המלצות ממנחים וממשתתפים. להשלמת התמונה – עיינו ב־<a href="index.html#tools">כלי AI פופולריים</a> בעמוד הראשי: ChatGPT, Claude, Gemini, Perplexity, Notebook LM ועוד, עם קישורים לאתרים הרשמיים.</p>
+        <p>לסיכום: התחילו מהבסיס עם אחד מכלי הצ'אט, הרחיבו ל־Notebook LM אם אתם עובדים עם מסמכים, ולמדו אוטומציה עם Zapier או n8n כשאתם מוכנים. כל הקישורים במאמר ובעמוד הראשי יאפשרו לכם לגשת ישירות לכלים – בהצלחה.</p>
       </div>
     </article>
+    </div>
   </main>
-  <footer><div class="wrap">© 2026 BrainAI · חדשות וחידושים</div></footer>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 אתר ללימוד בינה מלאכותית AI - כל הזכויות שמורות לשמוליק שחר יועץ לימודי המנגיש לימודי בינה מלאכותית לכל אדם</p>
+      <p class="footer-contact">טלפון: <a href="tel:+972522603831">+972522603831</a> | אימייל: <a href="mailto:shaharprod@gmail.com">shaharprod@gmail.com</a></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
